@@ -18,6 +18,7 @@ public class SimpleWindow {
         frame.setSize(framesize, framesize);
         Container contentPane = frame.getContentPane();
         contentPane.add(panel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
 
@@ -48,6 +49,5 @@ public class SimpleWindow {
                 }
             }
         }
-
     }
 }
