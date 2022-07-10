@@ -21,10 +21,12 @@ public class ConwayGameOfLife {
     }
 
     public static void main(String[] args) {
-        ConwayGameOfLife sim = new ConwayGameOfLife(50);
-        sim.createRandomStart(50);
-        sim.simulate(50);
-        int[][] endingWorld = sim.currentGeneration;
+        int dimension = 75;
+        int generations = 100;
+        ConwayGameOfLife sim = new ConwayGameOfLife(dimension);
+        sim.createRandomStart(dimension);
+        sim.simulate(generations);
+        //int[][] endingWorld = sim.currentGeneration;
     }
 
     // Contains the logic for the starting scenario.
