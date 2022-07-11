@@ -76,11 +76,11 @@ public class ConwayGameOfLife {
     private int isAlive(int row, int col, int[][] world) {
         int neighborsAlive = neighborsAlive(row, col, world);
         if (world[row][col] == 1) { // currently alive
-            if (neighborsAlive >= 2 && neighborsAlive <= 3) return 1;
+            if (neighborsAlive >= 2 && neighborsAlive <= 3) return 1; // stays alive
         } else { // currently dead
-            if (neighborsAlive == 3) return 1;
+            if (neighborsAlive == 3) return 1; // comes alive
         }
-        return 0;
+        return 0; // dead
     }
 
     private int neighborsAlive(int row, int col, int[][] world) {
