@@ -15,7 +15,7 @@ public class SimpleWindow {
         panel.setPreferredSize(dim);
         frame = new JFrame();
         Integer framesize = (this.dim < 100) ? 100 : this.dim;
-        frame.setSize(framesize, framesize);
+        frame.setSize(framesize, framesize + 28);
         Container contentPane = frame.getContentPane();
         contentPane.add(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
